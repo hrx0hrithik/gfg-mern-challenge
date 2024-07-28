@@ -4,7 +4,7 @@
 
 This project is a MERN (MongoDB, Express.js, React.js, Node.js) stack application for managing transactions. It provides a backend API for transaction listing, statistics, and bar chart data retrieval, and a frontend interface for visualizing and interacting with the transaction data.
 
-### Frontend hosted at -> [https://mern-test123.netlify.app/](https://mern-test123.netlify.app/)
+### Frontend hosted at -> [https://resonant-fox-c253d6.netlify.app/](https://resonant-fox-c253d6.netlify.app/)
 
 ## APIs
 
