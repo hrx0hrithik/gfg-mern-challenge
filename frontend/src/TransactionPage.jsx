@@ -78,11 +78,10 @@ const TransactionsPage = () => {
 
     const fetchAllData = async (month) => {
         setIsLoading(true)
-        console.log(BackendUrl)
         try {
             const response = await fetch(`${BackendUrl}/api/combined-data?month=${month}`)
             const data = await response.json()
-            console.log(data)
+            // console.log(data)
             setFilteredTransactions([])
             setTransactions(data.transactions.transactions)
             setTotalPages(data.transactions.totalPages)
