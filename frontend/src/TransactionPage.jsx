@@ -5,7 +5,7 @@ import TransactionsBarChart from './components/TransactionsBarChart'
 import TransactionPieChart from './components/TransactionPieChart'
 import LoadingComp from './components/LoadingComp'
 
-const BackendUrl = "https://mern-test-vmlt.onrender.com"
+const BackendUrl = import.meta.env.VITE_BACKEND_URL
 
 const TransactionsPage = () => {
     const [isLoading, setIsLoading] = useState(true)
@@ -78,6 +78,7 @@ const TransactionsPage = () => {
 
     const fetchAllData = async (month) => {
         setIsLoading(true)
+        console.log(BackendUrl)
         try {
             const response = await fetch(`${BackendUrl}/api/combined-data?month=${month}`)
             const data = await response.json()
