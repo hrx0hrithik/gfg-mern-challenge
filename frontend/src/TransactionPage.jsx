@@ -5,7 +5,7 @@ import TransactionsBarChart from './components/TransactionsBarChart'
 import TransactionPieChart from './components/TransactionPieChart'
 import LoadingComp from './components/LoadingComp'
 
-const BackendUrl = import.meta.env.VITE_BACKEND_URL
+const BackendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000"
 
 const TransactionsPage = () => {
     const [isLoading, setIsLoading] = useState(true)
